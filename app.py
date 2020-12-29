@@ -12,18 +12,18 @@ from flask_restful import Api, Resource, reqparse
 from keras.layers import Dense
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
+import keras
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import tensorflow as tf
 import seaborn as sns
 import joblib
 import pickle
 import json
 
 
-model = tf.keras.models.load_model('my_model.h5')
+model = keras.models.load_model('my_model.h5')
 app = Flask(__name__)
 
 
