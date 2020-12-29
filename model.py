@@ -39,9 +39,9 @@ def model_f(X,Y):
 
 if  __name__ == '__main__':
     
-    inner = pd.read_csv('Faulty_inner.csv')
-    outer = pd.read_csv('Faulty_outer.csv')
-    healthy = pd.read_csv('healthy.csv')
+    inner = pd.read_csv('data/Faulty_inner.csv')
+    outer = pd.read_csv('data/Faulty_outer.csv')
+    healthy = pd.read_csv('data/healthy.csv')
     
     pd.DataFrame(healthy)
     pd.DataFrame(outer)
